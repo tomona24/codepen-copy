@@ -159,6 +159,9 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+.product-item-footer {
+  width: 100%; }
+
 .hero-code-cards {
   width: 495px;
   height: 410px;
@@ -183,7 +186,7 @@ body {
   margin-top: -20px; }
 
 .over-right {
-  margin-right: -20px; }
+  margin-right: -25px; }
 
 .code-yellow {
   color: #e1ca72; }
@@ -207,7 +210,8 @@ body {
     display: inline-block;
     margin: 0 0 0 8px; }
   .hero-code-card-title i {
-    display: inline-block; }
+    font-size: 0.9rem;
+    margin: 0; }
 
 .hero-code-card-body > p {
   margin-top: 0;
@@ -220,10 +224,7 @@ body {
   margin-left: 2rem; }
 
 .text-margin-left-2 {
-  margin-left: 3rem; }
-
-.text-margin-left-3 {
-  margin-left: 4.5rem; }
+  margin-left: 4rem; }
 
 .cursor {
   animation: blink 1s infinite; }
