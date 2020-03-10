@@ -1,42 +1,442 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Code Pen Copy</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
     <!-- font-awesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <!-- googlefont -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="l-flex l-container">
       <div class="l-sidebar sidebar">
         <!-- Write code for Sidebar-->
+        <h1 class="sidebar-logo">C<i class="fa fa-cube"></i>DE PEN</h1>
+        <div class="start">
+          <p class="start-text text-gray">try our online editor</p>
+          <a class="button start-button"
+            ><span class="start-button-text">Start Coding</span></a
+          >
+        </div>
+        <ul class="sidebar-menu text-white">
+          <li class="sidebar-li-title text-yellow">explore</li>
+          <li><a>Picks</a></li>
+          <li><a>Popular</a></li>
+          <li><a>Topics</a></li>
+        </ul>
+        <ul class="sidebar-menu">
+          <li class="sidebar-li-title  text-green">grow</li>
+          <li><a>Jobs</a></li>
+          <li>
+            <a>CodePen<span class="badge">pro</span></a>
+          </li>
+          <li><a>Challenges</a></li>
+        </ul>
+        <ul class="sidebar-menu">
+          <li class="sidebar-li-title  text-blue">companies</li>
+          <li><a>Hire Talent</a></li>
+          <li><a>Create a Team</a></li>
+          <li><a>Advertise</a></li>
+        </ul>
+        <ul class="sidebar-menu">
+          <li><a class="text-gray">Newsletter</a></li>
+          <li><a class="text-gray">Blog</a></li>
+          <li><a class="text-gray">Doc&Support</a></li>
+        </ul>
       </div>
       <main class="l-main">
-      <header class="l-header">
-        <!-- Write code for Header-->
-      </header>
-      <div class="l-content">
-        <section class="l-section">
-          <div class="hero">
-             <!-- Write code for Hero-->
+        <header class="l-header l-align-center">
+          <!-- Write code for Header-->
+          <div class="header-formbar l-flex">
+            <i class="fa fa-search"></i>
+            <input
+              class="formbar-input"
+              type="text"
+              placeholder="Search CodePen..."
+            />
           </div>
-      </div>
-        </section>
-        <section class="l-section">
-          <div class="l-flex l-flex-wrap features">
-             <!-- Write code for Features-->
+          <div class="header-buttons l-flex">
+            <a class="button form-button button-green">Sign Up</a>
+            <a class="button form-button button-gray">Log In</a>
           </div>
-        </section>
-        <section class="l-section">
-          <div class="product-item-list">
-             <!-- Write code for Product List-->
+        </header>
+        <div class="l-content">
+          <section class="l-section">
+            <div class="hero l-flex l-flex-wrap">
+              <div class="hero-explanation">
+                <!-- Write code for Hero-->
+                <div class="hero-explanation-title">
+                  <i class="fa fa-cube"></i>
+                  <h3>
+                    The best place to build, test, and discover front-end code.
+                  </h3>
+                </div>
+                <div class="hero-explanation-body">
+                  <p>
+                    CodePen is a social development environment for front-end
+                    designers and developers. Build and deploy a website, show
+                    off your work, build test cases to learn and debug, and find
+                    inspiration.
+                  </p>
+                  <a class="button button-green hero-button"
+                    >Sign Up for Free</a
+                  >
+                </div>
+              </div>
+              <div class="hero-code-cards">
+                <div class="hero-code-card over-top">
+                  <div
+                    class="hero-code-card-title l-flex l-justify-space-between"
+                  >
+                    <div>
+                      <i class="fa fa-cog"></i>
+                      <h4>HTML</h4>
+                    </div>
+                    <i class="fa fa-chevron-down"></i>
+                  </div>
+                  <div class="hero-code-card-body">
+                    <p class="text-margin-left-0">
+                      <span class="code-brown">&lt;div</span
+                      ><span class="code-yellow"> class</span>=<span
+                        class="code-green"
+                        >"rect"</span
+                      ><span class="code-brown">&gt;&lt;/div&gt;</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="hero-code-card over-right">
+                  <div
+                    class="hero-code-card-title l-flex l-justify-space-between"
+                  >
+                    <div>
+                      <i class="fa fa-cog text-gray"></i>
+                      <h4>SCSS</h4>
+                    </div>
+                    <!-- text-gray反映 -->
+                    <!-- fontの隙間間 -->
+                    <!-- インデントもっとあとで入れる -->
+                    <i class="fa fa-chevron-down"></i>
+                  </div>
+                  <div class="hero-code-card-body">
+                    <p class="text-margin-left-0">
+                      <span class="code-yellow">.rect</span> {
+                    </p>
+                    <p class="text-margin-left-1">
+                      <span class="code-purple">background</span>:
+                      <span class="code-yellow">linear-gradient</span>(
+                    </p>
+                    <p class="text-margin-left-2">
+                      <span class="code-brown"> -119deg</span>,
+                    </p>
+                    <p class="text-margin-left-2">
+                      <span class="code-yellow">$gray</span
+                      ><span class="code-brown"> 0%</span>,
+                    </p>
+                    <p class="text-margin-left-2">
+                      <span class="code-yellow">$dark-gray</span
+                      ><span class="code-brown">100%</span>);<span
+                        class="cursor"
+                        >|</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="hero-code-card over-bottom">
+                  <div
+                    class="hero-code-card-title l-flex l-justify-space-between"
+                  >
+                    <div>
+                      <i class="fa fa-cog text-gray"></i>
+                      <h4>JS</h4>
+                    </div>
+                    <i class="fa fa-chevron-down"></i>
+                  </div>
+                  <div class="hero-code-card-body">
+                    <p class="text-margin-left-0">
+                      <span class="code-yellow">var</span>
+                      <span class="code-blue">colors</span> =
+                    </p>
+                    <p class="text-margin-left-0">
+                      [<span class="code-green"
+                        >"#74B087","#DE7300","#74B087"</span
+                      >];
+                    </p>
+                    <br />
+                    <p class="text-margin-left-0">
+                      <span class="code-yellow">function</span>
+                      <span class="code-blue">animate</span>() {};
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="l-section">
+            <div class="l-flex l-flex-wrap features l-justify-content-center">
+              <!-- Write code for Features-->
+              <div class="features-card">
+                <div class="feature-icon"><i class="fa fa-microchip"></i></div>
+                <div class="features-back-card">
+                  <div class="feature-body">
+                    <h2 class="features-card-title">Build & Test</h2>
+                    <p>
+                      Get work done quicker by building out entire projects or
+                      isolating code to test features and animations. Want to
+                      keep it all under wraps?
+                      <span class="text-blue"
+                        >Upgrade to a
+                        <span class="badge">PRO</span> account</span
+                      >
+                      to keep your work private.
+                    </p>
+                  </div>
+                  <div class="feature-footer">
+                    <a class="button button-gray">Try the Editor</a>
+                  </div>
+                </div>
+              </div>
+              <div class="features-card">
+                <div class="feature-icon"><i class="fa fa-globe"></i></div>
+                <div class="features-back-card">
+                  <div class="feature-body">
+                    <h2 class="features-card-title">Learn & Discover</h2>
+                    <p>
+                      Just starting out? Browsing, forking, and playing with
+                      Pens is a great way to understand how they were built and
+                      how code works. Teaching a class?
+                      <span class="text-blue">Professor mode</span> lets your
+                      students to see and comment on real-time Pen updates.
+                    </p>
+                  </div>
+                  <div class="feature-footer">
+                    <a class="button button-gray">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="features-card">
+                <div class="feature-icon"><i class="fa fa-share"></i></div>
+                <div class="features-back-card">
+                  <div class="feature-body">
+                    <h2 class="features-card-title">Share Your Work</h2>
+                    <p>
+                      Become a part of the most active front-end community in
+                      the world by sharing work. Presenting at a conference?
+                      Show your code directly in the browser with
+                      <span class="text-blue">Presentation Mode.</span>
+                    </p>
+                  </div>
+                  <div class="feature-footer">
+                    <a class="button button-gray">Expore Popular</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="l-section">
+            <div class="product-item-list">
+              <!-- Write code for Product List-->
+              <div class="l-flex l-flex-wrap l-justify-content-center product-item-body">
+                <div class="card card-description">
+                  <h4>
+                    Find inspiration from 1.8 million+ front-end designers and
+                    developers.
+                  </h4>
+                  <p class="text-gray">
+                    Browse and share work from world-class designers and
+                    developers in the front-end community.
+                  </p>
+                  <a href="" class="text-blue">Explore Picked Pens 	&#8594;</a>
+                </div>
+                <div class="card post-card">
+                  <a></a>
+                  <div class="post-card-capture">
+                    <img src="images/sample.png" alt="sample image" />
+                  </div>
+                  <div class="l-flex post-card-body">
+                    <div class="post-card-icon">
+                      <img src="images/80.jpg" alt="icon" />
+                    </div>
+                    <div class="post-card-info">
+                      <div class="post-card-title"><h4>Pixcel Dust</h4></div>
+                      <div class="post-card-author text-gray">Paul Neave</div>
+                    </div>
+                  </div>
+                  <div class="l-flex post-card-footer">
+                    <div class="post-card-response">
+                      <i class="fa fa-heart"></i>76
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-comment"></i>1
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-eye"></i>1,585
+                    </div>
+                  </div>
+                </div>
+                <div class="card post-card">
+                  <a></a>
+                  <div class="post-card-capture">
+                    <img src="images/sample.png" alt="sample image" />
+                  </div>
+                  <div class="l-flex post-card-body">
+                    <div class="post-card-icon">
+                      <img src="images/80.jpg" alt="icon" />
+                    </div>
+                    <div class="post-card-info">
+                      <div class="post-card-title"><h4>Pixcel Dust</h4></div>
+                      <div class="post-card-author text-gray">Paul Neave</div>
+                    </div>
+                  </div>
+                  <div class="l-flex post-card-footer">
+                    <div class="post-card-response">
+                      <i class="fa fa-heart"></i>76
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-comment"></i>1
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-eye"></i>1,585
+                    </div>
+                  </div>
+                </div>
+                <div class="card post-card">
+                  <a></a>
+                  <div class="post-card-capture">
+                    <img src="images/sample.png" alt="sample image" />
+                  </div>
+                  <div class="l-flex post-card-body">
+                    <div class="post-card-icon">
+                      <img src="images/80.jpg" alt="icon" />
+                    </div>
+                    <div class="post-card-info">
+                      <div class="post-card-title"><h4>Pixcel Dust</h4></div>
+                      <div class="post-card-author text-gray">Paul Neave</div>
+                    </div>
+                  </div>
+                  <div class="l-flex post-card-footer">
+                    <div class="post-card-response">
+                      <i class="fa fa-heart"></i>76
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-comment"></i>1
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-eye"></i>1,585
+                    </div>
+                  </div>
+                </div>
+                <div class="card post-card">
+                  <a></a>
+                  <div class="post-card-capture">
+                    <img src="images/sample.png" alt="sample image" />
+                  </div>
+                  <div class="l-flex post-card-body">
+                    <div class="post-card-icon">
+                      <img src="images/80.jpg" alt="icon" />
+                    </div>
+                    <div class="post-card-info">
+                      <div class="post-card-title"><h4>Pixcel Dust</h4></div>
+                      <div class="post-card-author text-gray">Paul Neave</div>
+                    </div>
+                  </div>
+                  <div class="l-flex post-card-footer">
+                    <div class="post-card-response">
+                      <i class="fa fa-heart"></i>76
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-comment"></i>1
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-eye"></i>1,585
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card post-card">
+                  <a></a>
+                  <div class="post-card-capture">
+                    <img src="images/sample.png" alt="sample image" />
+                  </div>
+                  <div class="l-flex post-card-body">
+                    <div class="post-card-icon">
+                      <img src="images/80.jpg" alt="icon" />
+                    </div>
+                    <div class="post-card-info">
+                      <div class="post-card-title"><h4>Pixcel Dust</h4></div>
+                      <div class="post-card-author text-gray">Paul Neave</div>
+                    </Paul>
+                  </div>
+                  <div class="l-flex post-card-footer">
+                    <div class="post-card-response">
+                      <i class="fa fa-heart"></i>76
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-comment"></i>1
+                    </div>
+                    <div class="post-card-response">
+                      <i class="fa fa-eye"></i>1,585
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-flex l-justify-content-center product-item-footer">
+                <a class="button product-item-list-button">Prev</a>
+                <a class="button product-item-list-button">Next</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="l-footer l-flex l-flex-wrap footer l-justify-space-between">
+          <!-- Write code for Footer List-->
+          <div class="footer-nav">
+            <ul class="l-flex footer-nav-ul">
+              <li><h4 class="footer-nav-title">CodePen</h4></li>
+              <li class="text-deepgray">About</li>
+              <li class="text-deepgray">Blog</li>
+              <li class="text-deepgray">Advertising</li>
+              <li class="text-deepgray">Docs</li>
+              <li class="text-deepgray">Support</li>
+              <li class="text-deepgray">Shop</li>
+            </ul>
+            <ul class="l-flex footer-nav-ul">
+              <li><h4 class="footer-nav-title">For</h4></li>
+              <li class="text-deepgray">Teams</li>
+              <li class="text-deepgray">Education</li>
+              <li class="text-deepgray">Privacy</li>
+              <li class="text-deepgray">Documentation</li>
+            </ul>
+            <ul class="l-flex footer-nav-ul">
+              <li><h4 class="footer-nav-title">Social</h4></li>
+              <li class="text-deepgray">Challenges</li>
+              <li class="text-deepgray">Twitter</li>
+              <li class="text-deepgray">Facebook</li>
+              <li class="text-deepgray">Instagram</li>
+            </ul>
+            <ul class="l-flex footer-nav-ul">
+              <li><h4 class="footer-nav-title">Community</h4></li>
+              <li class="text-deepgray">Spectrum</li>
+              <li class="text-deepgray">Teams</li>
+              <li class="text-deepgray">Code of Conduct</li>
+              <li class="text-deepgray">Jobs</li>
+            </ul>
           </div>
-        </section>
-        <footer class="l-footer l-flex l-flex-wrap footer">
-             <!-- Write code for Footer List-->
+          <div class="footer-info">
+            <h1 class="footer-logo">C<i class="fa fa-cube"></i>DEPEN</h1>
+            <div class="copyright">
+              <p class="text-gray">&copy;2020 CodePen<br>
+                Demo or it didn't happen.</p>
+            </div>
+          </div>
         </footer>
       </main>
     </div>

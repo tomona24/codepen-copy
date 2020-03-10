@@ -1,0 +1,1 @@
+1. startボタンのpテキスト　＝＞　ここだけmargin、font-sizeともにemにしているのは何故か
