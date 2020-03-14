@@ -13,6 +13,11 @@ body {
   box-sizing: border-box;
   color: #FFFFFF; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
+
 .l-flex {
   display: flex; }
 
@@ -391,8 +396,3 @@ body {
 
 .text-deepgray {
   color: #A5A5A5; }
-
-a {
-  text-decoration: none; }
-  a:hover {
-    cursor: pointer; }
